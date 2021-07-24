@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synesthesia Test</title>
+    <meta charset="utf-8"></meta>
+    <script defer src="syn.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    #myDiv, button {
+
+    }
+    input {
+
+    }
+    #giantColorChangingThing {
+      font-size: 1000%;
+      text-align: center;
+      font-weight: 700;
+    }
+    </style>
+  </head>
+  <body id = "body">
+    <!-- "Nav bar," but it's only one link  -->
+
+    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 shadow-lg mb-10">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase " href="synResult.html">
+            Click to see your results in action!
+          </a>
+      </div>
+    </nav>
+
+
+    <div class="container mx-auto items-center">
+
+    <div class="max-w-xs overflow-hidden rounded-lg shadow-lg p-10 text-2xl items-center">
+    <!-- Questions -->
+    <div id="form">
+      <!-- Color picker -->
+      <label for='colorForm' >Select which color you see the following symbol in:</label>
+      <form id = "colorForm">
+        <input type="color" id="color" name="color" onchange="changeColor()">
+      </form>
+
+      <!-- Button for "I don't percieve this in a color" -->
+      <div class="flex text-sm">
+      <label for='dontPerceiveForm' class="pr-4 mt-3 font-light">I don't perceive this in a color.</label>
+      <form id = "dontPerceiveForm">
+        <input type="checkbox" id="dontPerceive" class="mt-4" name="dontPerceive" >
+      </form>
+    </div>
+    </div>
+  </div>
+
+    <!-- Done button -->
+    <button onclick='answered()' class="h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-700 rounded-lg focus:shadow-outline hover:bg-green-800 hover:shadow-lg">Ok, I'm done.</button>
+
+<!-- Giant color-changing thing -->
+    <div id = "giantColorChangingThing" >
+      <p class="">A</p>
+    </div>
+    </div>
+
+
+
+    <footer class="text-center">
+      <h2 class="font-light text-lg">Synesthesia Tester by Daniel Xu.</h2>
+    </footer>
+
+
+
+
+
+  </body>
+</html>
