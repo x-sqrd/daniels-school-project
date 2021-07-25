@@ -1,6 +1,10 @@
 # daniels-school-project
 
-Credit: (Daniel Xu)[https://github.com/ChickenAgent2227] 
+Credit: [Daniel Xu](https://github.com/ChickenAgent2227)
+
+![image](https://user-images.githubusercontent.com/19739712/126889211-d61bf697-104f-40d4-93e7-c19b322f1b54.png)
+
+
 (All code by him)
 
 ## Screenshots:
